@@ -31,7 +31,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="col s8 offset-s4">
+        <div className="col s8 offset-s6">
           <span className="col s8">SUB TOTAL</span>
           <span>${this.props.sub_total}</span>
         </div>

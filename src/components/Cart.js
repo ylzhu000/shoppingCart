@@ -128,10 +128,10 @@ class Cart extends React.Component {
       <table className="highlight">
           <thead>
             <tr className="row">
-              <td className="col s8">Total Items: {this.state.cartProducts.length} ITEMS</td>
-              <td className="col s1">Size</td>
-              <td className="col s2">QTY</td>
-              <td className="col s1" style={{float: 'none'}}>Price</td>
+              <td>Total Items: {this.state.cartProducts.length} ITEMS</td>
+              <td>Size</td>
+              <td>QTY</td>
+              <td>Price</td>
             </tr>
           </thead>
           <tbody>
@@ -149,12 +149,13 @@ class Cart extends React.Component {
 
                 return (
                   <tr id={items.id} key={items.id} className="row">
-                    <td className="col s8">
+                    <td className="col s12">
                       <img className="col s4" src={items.img} alt={items.style} style={{height: "120px", width:"150px"}}/>
                       <span className="col s4">
                         <b>{items.name}</b><br />
                         Style: {items.style}<br />
                         Color: <b>{items.color.color2}</b><br />
+                        Item Price: ${items.price}<br />
                         <Edit current_product={items}/> | X
                         <span>
                           <a className="waves-effect" onClick={(e) => this.handleRemoveItem(index,e)}>REMOVE</a>
@@ -164,9 +165,11 @@ class Cart extends React.Component {
                         </span>
                       </span>
                     </td>
-                    <td className="col s1">S</td>
-                    <td className="col s2"><input type="number" min="0" key={items.id} onChange={(e) => this.handleChange(items.id, items.price, item_total_price ,e)}/></td>
-                    <td className="col s1" style={{float: 'none'}}>${item_total_price}</td>
+                    <td>S</td>
+                    <td className="input-field">
+                      <input type="number" min="0" key={items.id} onChange={(e) => this.handleChange(items.id, items.price, item_total_price ,e)}/>
+                    </td>
+                    <td>${item_total_price}</td>
                   </tr>
                 )
               })

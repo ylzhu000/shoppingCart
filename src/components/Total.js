@@ -7,7 +7,7 @@ class Total extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="col s8 offset-s4">
+        <div className="col s8 offset-s6">
           <span className="col s8">ESTIMATED TOTAL*</span>
           <span>${this.props.total_price}</span>
           <div style={{paddingLeft: '11px'}}>Tax will be applied during checkout</div>

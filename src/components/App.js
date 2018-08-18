@@ -9,7 +9,6 @@ class App extends React.Component {
     return(
       <div>
         <h4 style={Style}>YOUR SHOPPING CART</h4>
-        <p style={Style}>If the cart is compeletly empty then we shall again add back the products for you</p>
         <Cart />
       </div>
     );
