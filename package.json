@@ -5,6 +5,8 @@
     "npm": "5.7.1",
     "node": "9.5.0"
   },
+  "author": "YANLIN ZHU",
+  "repository": "https://github.com/ylzhu000/shoppingCart",
   "dependencies": {
     "materialize-css": "^0.100.2",
     "react": "^16.4.2",

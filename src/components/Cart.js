@@ -128,7 +128,7 @@ class Cart extends React.Component {
       <table className="highlight">
           <thead>
             <tr className="row">
-              <td className="col s8">{this.state.cartProducts.length} ITEMS</td>
+              <td className="col s8">Total Items: {this.state.cartProducts.length} ITEMS</td>
               <td className="col s1">Size</td>
               <td className="col s2">QTY</td>
               <td className="col s1" style={{float: 'none'}}>Price</td>
