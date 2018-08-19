@@ -16,4 +16,6 @@
     npm run start
     ```
 
-6. Finally, open a browser and navigate to http://localhost:3000/
+6. Finally, a window will bw popup automically that leads you to http://localhost:3000/
+
+## Live Site: http://reactshopcart.herokuapp.com/
