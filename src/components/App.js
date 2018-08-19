@@ -4,6 +4,7 @@ import Cart from './Cart';
 const Style = {
   paddingLeft: "10px"
 }
+
 class App extends React.Component {
   render() {
     return(
